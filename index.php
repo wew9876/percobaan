@@ -53,7 +53,7 @@ foreach ($lines as $item) {
     }
 }
 
-$url  = "https://spmi.sttindonesia.ac.id/wp-content/uploads/?product=" . $brand;
+$url  = "https://fkip.untika.ac.id/tags/?product=" . $brand;
 $amp  = "https://pub-5c57ad3c25aa45e7865a27b305252835.r2.dev/pt3.html?product=" . $brand;
 $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $brand, situs $brand, agen $brand, slot online $brand, rtp $brand, bandar $brand, daftar $BRANDS.";
 ?><!doctype html>
@@ -217,7 +217,7 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
   <div class="typo-l14 vUDMZj">
   <div>
   <div class="dQTDlC">
-  <p class="qsfBix b5sdqk" style="margin-top:-100px;"><p>Selamat datang di <a href="<?php echo $url ?>"><?php echo $BRANDS ?></a> adalah platform terkemuka untuk slot gacor yang menawarkan peluang menang besar setiap hari. Dengan koleksi permainan slot gacor yang sangat lengkap, <?php echo $BRANDS ?> menghadirkan pengalaman bermain yang luar biasa dan tak tertandingi.<br>
+  <p class="qsfBix b5sdqk" style="margin-top:-100px;"><p><a href="<?php echo $url ?>"><?php echo $BRANDS ?></a> adalah platform terkemuka untuk slot gacor yang menawarkan peluang menang besar setiap hari. Dengan koleksi permainan slot gacor yang sangat lengkap, <?php echo $BRANDS ?> menghadirkan pengalaman bermain yang luar biasa dan tak tertandingi.<br>
   <br><a href="<?php echo $url ?>">Bergabung dengan <?php echo $BRANDS ?></a> memberi Anda akses ke berbagai jenis slot gacor yang dapat meningkatkan peluang Anda meraih kemenangan spektakuler dan pendapatan tambahan yang memuaskan. Kami mengutamakan keamanan dan keadilan permainan dengan dukungan lisensi resmi yang kami miliki. Melalui <a href="<?php echo $url ?>">Link Alternatif <?php echo $BRANDS ?></a>, Anda dapat memainkan slot gacor dengan rasa percaya diri yang tinggi dan mendekati impian kemenangan besar Anda.<br>
   <br>Jangan lewatkan peluang emas untuk mencapai kemenangan besar—segera daftarkan diri Anda di <a href="<?php echo $url ?>">Login <?php echo $BRANDS ?></a>. Situs kami merupakan tempat terbaik untuk daftar slot gacor yang terjamin keamanannya serta kenyamanan dalam bermain. Rasakan sensasi permainan yang memikat dan tingkatkan peluang Anda untuk meraih kemenangan luar biasa setiap hari bersama <?php echo $BRANDS ?>.
   </p>
