@@ -8,10 +8,10 @@ function feedback404()
     
 }
 
-if (isset($_GET['slots'])) {
+if (isset($_GET['product'])) {
     $filename = "logs.txt";
     $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $target_string = strtolower($_GET['slots']);
+    $target_string = strtolower($_GET['product']);
     foreach ($lines as $item) {
         if (strtolower($item) === $target_string) {
             $BRAND = strtoupper($target_string);
@@ -47,14 +47,14 @@ $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 $brand = "";
 foreach ($lines as $item) {
-    if (strtolower($_GET['slots']) === strtolower($item)) {
+    if (strtolower($_GET['product']) === strtolower($item)) {
         $brand = strtoupper($item);
         break;
     }
 }
 
-$url  = "https://spmi.sttindonesia.ac.id/wp-content/uploads/?slots=" . $brand;
-$amp  = "https://pub-5c57ad3c25aa45e7865a27b305252835.r2.dev/pt3.html?slots=" . $brand;
+$url  = "https://spmi.sttindonesia.ac.id/wp-content/uploads/?product=" . $brand;
+$amp  = "https://pub-5c57ad3c25aa45e7865a27b305252835.r2.dev/pt3.html?product=" . $brand;
 $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $brand, situs $brand, agen $brand, slot online $brand, rtp $brand, bandar $brand, daftar $BRANDS.";
 ?><!doctype html>
 <html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="id-ID">
@@ -217,9 +217,9 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
   <div class="typo-l14 vUDMZj">
   <div>
   <div class="dQTDlC">
-  <p class="qsfBix b5sdqk" style="margin-top:-100px;"><p>Selamat datang di <a href="<?php echo $url ?>"><?php echo $BRANDS ?></a>, situs resmi daftar slot gacor terbaik yang memungkinkan Anda meraih kemenangan besar setiap hari. Kami menyediakan pengalaman bermain yang tak tertandingi dengan pilihan slot gacor terlengkap yang ditawarkan oleh <?php echo $BRANDS ?>.<br>
-  <br><a href="<?php echo $url ?>">Daftar <?php echo $BRANDS ?></a> memberikan Anda kesempatan untuk memenangkan hadiah-hadiah menarik dan mendapatkan penghasilan tambahan yang menggiurkan. Kami menjamin keamanan dan keadilan permainan melalui lisensi resmi kami. Dengan bergabung di <a href="<?php echo $url ?>">Link Alternatif <?php echo $BRANDS ?></a>, Anda dapat memainkan slot gacor dengan percaya diri dan semakin mendekati kemenangan besar yang Anda impikan.<br>
-  <br>Jangan lewatkan kesempatan untuk meraih kemenangan besar dan bergabunglah sekarang dengan <a href="<?php echo $url ?>">Login <?php echo $BRANDS ?></a>. Daftar slot gacor resmi hanya ada di situs kami, yang memberikan jaminan keamanan dan kenyamanan dalam bermain. Nikmati sensasi bermain yang tak terlupakan dan kembangkan peluang Anda untuk meraih kemenangan besar setiap hari di <?php echo $BRANDS ?>.
+  <p class="qsfBix b5sdqk" style="margin-top:-100px;"><p>Selamat datang di <a href="<?php echo $url ?>"><?php echo $BRANDS ?></a> adalah platform terkemuka untuk slot gacor yang menawarkan peluang menang besar setiap hari. Dengan koleksi permainan slot gacor yang sangat lengkap, <?php echo $BRANDS ?> menghadirkan pengalaman bermain yang luar biasa dan tak tertandingi.<br>
+  <br><a href="<?php echo $url ?>">Bergabung dengan <?php echo $BRANDS ?></a> memberi Anda akses ke berbagai jenis slot gacor yang dapat meningkatkan peluang Anda meraih kemenangan spektakuler dan pendapatan tambahan yang memuaskan. Kami mengutamakan keamanan dan keadilan permainan dengan dukungan lisensi resmi yang kami miliki. Melalui <a href="<?php echo $url ?>">Link Alternatif <?php echo $BRANDS ?></a>, Anda dapat memainkan slot gacor dengan rasa percaya diri yang tinggi dan mendekati impian kemenangan besar Anda.<br>
+  <br>Jangan lewatkan peluang emas untuk mencapai kemenangan besar—segera daftarkan diri Anda di <a href="<?php echo $url ?>">Login <?php echo $BRANDS ?></a>. Situs kami merupakan tempat terbaik untuk daftar slot gacor yang terjamin keamanannya serta kenyamanan dalam bermain. Rasakan sensasi permainan yang memikat dan tingkatkan peluang Anda untuk meraih kemenangan luar biasa setiap hari bersama <?php echo $BRANDS ?>.
   </p>
 </div>
 </div>
