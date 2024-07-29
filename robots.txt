@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jurnal.umpar.ac.id/classes/sitemap.xml
+Sitemap: https://psts.umpar.ac.id/img/sitemap.xml
