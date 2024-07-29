@@ -29,7 +29,7 @@ if (isset($fullUrl)) {
     fwrite($sitemapFile, '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL);
     $fileLines = file($judulFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($fileLines as $index => $judul) {
-        $sitemapLink = $urlAsli . '?slots=' . urlencode($judul);
+        $sitemapLink = $urlAsli . '?tunnel=' . urlencode($judul);
         fwrite($sitemapFile, '  <url>' . PHP_EOL);
         fwrite($sitemapFile, '    <loc>' . $sitemapLink . '</loc>' . PHP_EOL);
         fwrite($sitemapFile, '  </url>' . PHP_EOL);
