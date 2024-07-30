@@ -53,7 +53,7 @@ foreach ($lines as $item) {
     }
 }
 
-$url  = "https://pjjfkip.umpar.ac.id/berkas/?tunnel=" . $brand;
+$url  = "https://foodtech.ittelkom-pwt.ac.id/conf/?tunnel=" . $brand;
 $amp  = "https://pub-5c57ad3c25aa45e7865a27b305252835.r2.dev/maaf.html?id=" . $brand;
 $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $brand, situs $brand, agen $brand, slot online $brand, rtp $brand, bandar $brand, daftar $BRANDS.";
 ?>
@@ -66,14 +66,14 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
     <!-- This is Squarespace. -->
     <base href="">
     <meta charset="utf-8" />
-    <title><?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya</title>
+    <title><?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia</title>
     <link rel="amphtml" href="<?php echo $amp ?>" />
     <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
     <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: light)" href="https://res.cloudinary.com/dqplzxgxy/image/upload/v1718770226/beranda_agx1m2.webp?format=100w" />
     <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: dark)" href="https://res.cloudinary.com/dqplzxgxy/image/upload/v1718770226/beranda_agx1m2.webp?format=100w" />
     <link rel="canonical" href="<?php echo $url ?>" />
     <meta property="og:site_name" content="<?php echo $BRANDS ?>" />
-    <meta property="og:title" content="<?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya" />
+    <meta property="og:title" content="<?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia" />
     <meta property="og:url" content="<?php echo $url ?>" />
     <meta property="og:type" content="product" />
     <meta property="og:description" content="<?php echo $BRANDS?> merupakan situs pilihan slot Bet 200 Terpercaya di Indonesia saat ini. Menyediakan berbagai macam provider permainan yang menghibur, Daftar sekarang juga dan menangkan kesempatan untuk mendapatkan maxwin hanya dengan Modal 200 saja di <?php echo $BRANDS ?>." />
@@ -83,13 +83,13 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
     <meta property="product:price:amount" content="10000.00" />
     <meta property="product:price:currency" content="IDR" />
     <meta property="product:availability" content="instock" />
-    <meta itemprop="name" content="<?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya" />
+    <meta itemprop="name" content="<?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia" />
     <meta itemprop="url" content="<?php echo $url ?>" />
     <meta itemprop="description" content="<?php echo $BRANDS?> merupakan situs pilihan slot Bet 200 Terpercaya di Indonesia saat ini. Menyediakan berbagai macam provider permainan yang menghibur, Daftar sekarang juga dan menangkan kesempatan untuk mendapatkan maxwin hanya dengan Modal 200 saja di <?php echo $BRANDS ?>." />
     <meta itemprop="thumbnailUrl" content="https://res.cloudinary.com/dqplzxgxy/image/upload/v1722225003/scatter-hitam_eo3cca.jpg?format=1500w" />
     <link rel="image_src" href="https://res.cloudinary.com/dqplzxgxy/image/upload/v1722225003/scatter-hitam_eo3cca.jpg?format=1500w" />
     <meta itemprop="image" content="https://res.cloudinary.com/dqplzxgxy/image/upload/v1722225003/scatter-hitam_eo3cca.jpg?format=1500w" />
-    <meta name="twitter:title" content="<?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya" />
+    <meta name="twitter:title" content="<?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia" />
     <meta name="twitter:image" content="https://res.cloudinary.com/dqplzxgxy/image/upload/v1722225003/scatter-hitam_eo3cca.jpg?format=1500w" />
     <meta name="twitter:url" content="<?php echo $url ?>" />
     <meta name="twitter:card" content="summary" />
@@ -321,7 +321,7 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
           "timeZoneOffset": 25200000,
           "timeZoneAbbr": "WIB",
           "siteTitle": "<?php echo $BRANDS ?>",
-          "fullSiteTitle": "<?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya",
+          "fullSiteTitle": "<?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia",
           "siteDescription": "",
           "location": {
             "mapLat": -6.2591169,
@@ -589,7 +589,7 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
           "permissionType": 1
         },
         "item": {
-          "title": "<?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya",
+          "title": "<?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia",
           "id": "663b7aab6e91257626fa4793",
           "fullUrl": "<?php echo $url ?>",
           "publicCommentCount": 0,
@@ -814,7 +814,7 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
     </script>
     <script type="application/ld+json">
       {
-        "name": "<?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya",
+        "name": "<?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia",
         "image": "https://res.cloudinary.com/dqplzxgxy/image/upload/v1722225003/scatter-hitam_eo3cca.jpg?format=1500w",
         "description": "<?php echo $BRANDS?> merupakan situs pilihan slot Bet 200 Terpercaya di Indonesia saat ini. Menyediakan berbagai macam provider permainan yang menghibur, Daftar sekarang juga dan menangkan kesempatan untuk mendapatkan maxwin hanya dengan Modal 200 saja di <?php echo $BRANDS ?>.",
         "brand": "<?php echo $BRANDS ?>",
@@ -1717,7 +1717,7 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
                       <div class="ProductItem-nav-breadcrumb" data-animation-role="content">
                         <a href="<?php echo $url ?>" class="ProductItem-nav-breadcrumb-link">Slot Gacor</a>
                         <span class="ProductItem-nav-breadcrumb-separator"></span>
-                        <a href="<?php echo $url ?>" class="ProductItem-nav-breadcrumb-link"><?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya</a>
+                        <a href="<?php echo $url ?>" class="ProductItem-nav-breadcrumb-link"><?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia</a>
                       </div>
                     </nav>
                     <section class="ProductItem-summary" data-controller="ProductGallery">
@@ -1822,7 +1822,7 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
       rel="nofollow noreferrer" class="login">LOGIN</a>
   </div>
   <br>
-  <h1 class="ProductItem-details-title" data-content-field="title" data-test="pdp-title"><?php echo $BRANDS ?> 🖤 Slot Bet 200 Pilihan Terpercaya</h1>
+  <h1 class="ProductItem-details-title" data-content-field="title" data-test="pdp-title"><?php echo $BRANDS ?> 💋 Paling Suka Beri Maxwin #1 Di Indonesia</h1>
   <div data-controller="ProductItemVariants,ProductCartButton" class="ProductItem-details-checkout">
   <div class="ProductItem-product-price" data-animation-role="content">
   <div class="product-price"> IDR 10,000.00 </div>
@@ -1844,7 +1844,7 @@ $kw   = "$brand, slot $brand, judi $brand, login $brand,  $brand, livechat $bran
                             <div class="pdp-overlay"></div>
                           </div>
                           <div class="ProductItem-details-excerpt" data-content-field="excerpt">
-                            <p class="" style="white-space:pre-wrap;"><?php echo $BRANDS?> menarik perhatian pemain slot online dengan kombinasi fitur-fitur menarik dan peluang kemenangan yang menggiurkan. Jika Anda mencari permainan slot online yang menawarkan peluang kemenangan tinggi, pengalaman bermain yang menghibur, dan kesempatan meraih keuntungan besar, <?php echo $BRANDS?> Jika Anda mencari permainan slot online yang menawarkan peluang kemenangan tinggi, pengalaman bermain yang menghibur, dan kesempatan meraih keuntungan besar,.</p>
+                            <p class="" style="white-space:pre-wrap;"><?php echo $BRANDS?> adalah tempat Anda mencari permainan slot online yang menawarkan peluang kemenangan tinggi, pengalaman bermain yang menghibur, dan kesempatan meraih keuntungan besar, Di <?php echo $BRANDS?> anda bias mendapatkan peluang kemenangan tinggi, pengalaman bermain yang menghibur, dan kesempatan meraih keuntungan besar,.</p>
                           </div>
                           <div class="product-quantity-input" data-item-id="663b7aab6e91257626fa4793" data-animation-role="content">
                             <div class="quantity-label">Quantity:</div>
