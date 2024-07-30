@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://psts.umpar.ac.id/img/sitemap.xml
+Sitemap: https://pjjfkip.umpar.ac.id/berkas/sitemap.xml
