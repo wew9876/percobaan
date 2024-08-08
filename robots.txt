@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pjjfkip.umpar.ac.id/berkas/sitemap.xml
+Sitemap: https://smkwalisongojakarta.sch.id/data/sitemap.xml
