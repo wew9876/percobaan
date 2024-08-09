@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smkwalisongojakarta.sch.id/data/sitemap.xml
+Sitemap: https://man4jombang.sch.id/data/sitemap.xml
